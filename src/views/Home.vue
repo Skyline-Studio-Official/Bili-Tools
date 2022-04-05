@@ -1,18 +1,30 @@
 <template>
   <div class="home">
-    <img alt="Vue logo" src="../assets/logo.png">
-    <HelloWorld msg="Welcome to Your Vue.js App"/>
+    <a-button type="primary" @click="info">Welcome</a-button>
   </div>
 </template>
 
 <script>
-// @ is an alias to /src
-import HelloWorld from '@/components/HelloWorld.vue'
-
-export default {
-  name: 'Home',
-  components: {
-    HelloWorld
-  }
-}
+// export default {name: 'App',components: {}}
+import { message } from 'ant-design-vue';
+import { defineComponent } from 'vue';
+export default defineComponent({
+  setup() {
+    const info = () => {
+      message.info('Hello, Welcome to Coding-Tools');
+    };
+    return {
+      info,
+    };
+  },
+});
 </script>
+
+<style>
+.home {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%,-50%);
+}
+</style>
