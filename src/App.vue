@@ -1,5 +1,5 @@
 <template>
-  <a-layout style="height:100vh">
+  <a-layout style="height:100%">
     <a-layout-header style="color:white">
       这是Header
       <!-- Router-Link = <a> 但是这是针对路由的 -->
