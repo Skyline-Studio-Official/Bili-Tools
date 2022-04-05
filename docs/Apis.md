@@ -2,6 +2,8 @@
 
 ## 接口规范
 
+GitHub显示格式有些许问题，请换至本地查看
+
 ### 接口规范
 
 接口名
@@ -15,20 +17,32 @@
 ### 实例
 
 #### 登录接口
-Login -> Username, Password
-本接口用于登录验证
-Username -> 用户名/邮箱/账号 | Password -> 密码/后端MD5
-返回
+接口信息：Login -> Username, Password
+接口概述：本接口用于登录验证
+接口参数：Username -> 用户名/邮箱/账号 | Password -> 密码/后端MD5
+接口返回值
 | -> 成功 > 20001 > 用户信息
 | -> 失败 > 40001 > Msg
 
 #### 查询用户接口
-Login -> Username
-本接口用于查询某个用户
-Username -> 用户名/邮箱/账号/关键词
-返回
+接口信息：Login -> Username
+接口概述：本接口用于查询某个用户
+接口参数：Username -> 用户名/邮箱/账号/关键词
+接口返回值
 | -> 成功 > 20002 > 用户信息
 | -> 失败 > 40002 > Msg
+
+## 接口列表
+
+### 用户类
+
+#### 用户注册接口
+接口信息：Login -> Username, Nickname, Password, Email
+接口概述：用户注册接口
+接口参数：Username -> 用户名, Nickname -> 用户显示名称, Password -> 用户密码（后端MD5储存）, Email -> 用户邮箱
+接口返回值
+| -> 成功 > 20001 > 用户信息
+| -> 失败 > 40001 > 重新注册
 
 
 
