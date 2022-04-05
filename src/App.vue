@@ -4,7 +4,6 @@
 
 <script>
 // export default {name: 'App',components: {}}
-
 import { message } from 'ant-design-vue';
 import { defineComponent } from 'vue';
 export default defineComponent({
@@ -12,13 +11,11 @@ export default defineComponent({
     const info = () => {
       message.info('Hello, Welcome to Coding-Tools');
     };
-
     return {
       info,
     };
   },
 });
-
 </script>
 
 <style>
