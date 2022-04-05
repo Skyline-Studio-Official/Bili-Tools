@@ -2,10 +2,10 @@ from os import system
 import time
 import datetime
 
-a = input("Version: >>")
+a = input("Description: >>")
 
 debug = False
-date_time = datetime.datetime.now().strftime("%Y.%m.%d | %H:%M | Ver "+a)
+date_time = datetime.datetime.now().strftime("%Y.%m.%d | %H:%M | "+a)
 
 if not debug:
     system("git add .")
