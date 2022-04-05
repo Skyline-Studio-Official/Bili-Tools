@@ -1,6 +1,6 @@
 # Coding-tools介绍
 
-一下文档能帮助您更加理解Coding-tools项目并且助您开发本项目
+以下文档能帮助您更加理解Coding-tools项目并且助您开发本项目
 
 ## 名称说明
 
@@ -23,7 +23,7 @@
 ### 项目框架
 本项目选用Vue3作为前端框架，原生PHP做后端
 
-UI库选用了antDesignVue (Clickme)[https://next.antdv.com/] + Element UI（部分）
+UI库选用了antDesignVue [Clickme](https://next.antdv.com/) + Element UI（部分）
 
 包管理使用Yarn
 
