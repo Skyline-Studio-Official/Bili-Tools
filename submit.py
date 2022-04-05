@@ -5,7 +5,7 @@ import datetime
 a = input("Version: >>")
 
 debug = False
-date_time = datetime.datetime.now().strftime("%Y.%m.%d | %H:%M | Ver ")
+date_time = datetime.datetime.now().strftime("%Y.%m.%d | %H:%M | Ver "+a)
 
 if not debug:
     system("git add .")
