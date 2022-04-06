@@ -7,16 +7,20 @@
         </div>
       </div>
     </a-carousel>
-    <a v-for="(item,i) in source_data" :key="i" :href="item.link">
-      <a-card hoverable style="width: 280px;margin:5px;border-radius:8px;">
-        <a-card-meta :title="item.name" :description="item.description"></a-card-meta>
-        <img
-          alt="example"
-          style="height:100%;width:100%;margin-top:12px;background-size:cover;"
-          src="https://gw.alipayobjects.com/zos/rmsportal/JiqGstEfoWAOHiTxclqi.png"
-        />
-    </a-card>
-  </a>
+
+    <div class="Stars">
+      <a-divider orientation="left">Left Text</a-divider>
+      <a v-for="(item,i) in source_data" :key="i" :href="item.link">
+        <a-card hoverable style="width: 280px;margin:5px;border-radius:8px;">
+          <a-card-meta :title="item.name" :description="item.description"></a-card-meta>
+          <img
+            alt="example"
+            style="height:100%;width:100%;margin-top:12px;background-size:cover;"
+            src="https://gw.alipayobjects.com/zos/rmsportal/JiqGstEfoWAOHiTxclqi.png"
+          />
+        </a-card>
+      </a>
+    </div>
   </div>
 </template>
 
@@ -51,6 +55,8 @@ export default {
       ],
 
       star_source: [
+        {"name": "这是一个测试代码1","link":"/world/1","img":"https://t8.baidu.com/it/u=3091762941,2208638369&fm=167&app=3000&size=w560&q=100&n=0&f=PNG&fmt=auto?sec=1649350800&t=7c10960ae24fa14d1da95d152da2f0f4"},
+        {"name": "这是一个测试代码2","link":"/world/1","img":"https://gw.alipayobjects.com/zos/rmsportal/JiqGstEfoWAOHiTxclqi.png"},
         {"name": "这是一个测试代码1","link":"/world/1","img":"https://t8.baidu.com/it/u=3091762941,2208638369&fm=167&app=3000&size=w560&q=100&n=0&f=PNG&fmt=auto?sec=1649350800&t=7c10960ae24fa14d1da95d152da2f0f4"},
         {"name": "这是一个测试代码2","link":"/world/1","img":"https://gw.alipayobjects.com/zos/rmsportal/JiqGstEfoWAOHiTxclqi.png"},
       ],
@@ -141,7 +147,7 @@ a:hover {
 
 .ant-carousel {
   height: 300px;
-  max-width: 96.5%;
+  max-width: 94%;
   min-width: 90%;
   margin: 5px;
 }
@@ -170,7 +176,8 @@ a:hover {
   text-align: center;
 }
 
-.home {
+.Stars {
+  justify-content: center;
   display: flex;
   flex-wrap: wrap;
 }

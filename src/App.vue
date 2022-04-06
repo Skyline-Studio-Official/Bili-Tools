@@ -1,7 +1,7 @@
 <template>
   <a-layout style="height:100%">
     <a-layout-header style="color:white">
-      这是Header
+      Bili-Tools
       <!-- Router-Link = <a> 但是这是针对路由的 -->
       <div style="" class="nav">
         <div class="nav-item"><router-link to="/" >主页</router-link></div>
