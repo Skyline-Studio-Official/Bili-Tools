@@ -32,9 +32,9 @@
          * */
 
         // 连接MySql数据库
-        function connectDb($conn, $host, $usr, $pwd, $port, $name){
-            $conn = mysqli_connect($host, $usr, $pwd, $name, $port);
-            if (!$conn){
+        function connectDb($con, $host, $usr, $pwd, $port, $name){
+            $con = mysqli_connect($host, $usr, $pwd, $name, $port);
+            if (!$con){
                 die("Connect failed:" . mysqli_connect_error());
             }
             echo "Connect Successfully";
