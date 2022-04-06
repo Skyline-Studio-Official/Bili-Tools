@@ -1,4 +1,9 @@
 <?php
+    /*
+     * Author : torunwithwind 和风赛跑的男人
+     * Action : 后台管理员登录的后台代码
+     * Time : 2022/4/6
+     * */
     include 'PublicClass.php';
     if (isset($_POST['adminUsername']) && isset($_POST['adminPassword'])){
         $adminUsr = $_POST['adminUsername'];
