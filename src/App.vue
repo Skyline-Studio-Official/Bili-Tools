@@ -9,16 +9,16 @@
       </div>
     </a-layout-header>
     <a-layout>
-      <!-- <a-layout-sider style="color:white">
+      <a-layout-sider style="color:white">
         这是侧边栏
-      </a-layout-sider> -->
-      <a-layout-content>
+      </a-layout-sider>
+      <a-layout-content style="overflow:auto">
         <!-- Router View会渲染此时页面的路由 -->
         <!-- 渲染的东西会放在Router-View标签里 -->
         <router-view></router-view>
       </a-layout-content>
     </a-layout>
-    <a-layout-footer>Coding Tools &copy; Skyline Studio 天际工作室 | 2022</a-layout-footer>
+    <a-layout-footer style="height: 60px;">Coding Tools &copy; Skyline Studio 天际工作室 | 2022</a-layout-footer>
   </a-layout>
 </template>
 

@@ -9,7 +9,12 @@ const routes = [
     component: Home
   },
   {
-    path: '/world',
+    path: '/world/',
+    name: 'World',
+    component: World
+  },
+  {
+    path: '/world/p/:id',
     name: 'World',
     component: World
   },
