@@ -4,7 +4,7 @@
      * Action : 后台管理员登录的后台代码
      * Time : 2022/4/6
      * */
-    include 'PublicClass.php';
+    include 'publicClass.php';
     if (isset($_POST['adminUsername']) && isset($_POST['adminPassword'])){
         $adminUsr = $_POST['adminUsername'];
         $adminPwd = $_POST['adminPassword'];
