@@ -20,7 +20,7 @@ const routes = [
     component: World
   },
   {
-    path:'/admin',
+    path:'/Admin',
     name:'Admin',
     component:Admin
   }

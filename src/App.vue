@@ -6,7 +6,7 @@
       <div style="" class="nav">
         <div class="nav-item"><router-link to="/" >主页</router-link></div>
         <div class="nav-item"><router-link to="/world" >世界</router-link></div>
-        <div class="nav-item"><router-link to="/admin" >后台</router-link></div>
+        <div class="nav-item"><a href="http://localhost:8000/user/login?redirect=%2F">后台</a></div>
       </div>
     </a-layout-header>
     <a-layout>
